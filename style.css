@@ -1,0 +1,86 @@
+body{
+  background-image: url("images\pattern-background-desktop.svg");
+  background-color: var(--pale-blue);
+}
+:root{
+  --pale-blue: hsl(225, 100%, 94%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+.container{
+  margin:auto;
+  margin-top: 1.25rem;
+  width: 20rem;
+  height: 31.25rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 20px 15px 0 var(--pale-blue);
+}
+.first-part{
+  width: 100%;
+  height: 10.625em;
+}
+.first-img{
+  width: 100%; 
+  height: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.second-part{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+p{
+  font-size: 15px;
+}
+.first-para{
+  margin-top: -5px;
+  width: 15.625em;
+  text-align: center;
+}
+.plan{
+  background: var(--very-pale-blue);
+  width: 17.5em;
+  height: 5em;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+button{
+  margin-top: 1.25em;
+  background: var(--bright-blue);
+  color: var(--very-pale-blue);
+  width: 17.5rem;
+  height: 2.5rem;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 20px 20px 0 var(--pale-blue);
+  font-size: 13px;
+}
+:where(a, button):hover{
+  opacity: 0.7;
+}
+.last-text{
+  margin-top: 1.25em;
+  color: var(--desaturated-blue);
+  font-size: 13px;
+}
+.last-text:hover{
+  color: var(--dark-blue);
+}
+a, button, .last-text{
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: none;
+}
+.attribution{
+  font-size: 11px; text-align: center; 
+}
+.attribution a{ 
+  color: hsl(228, 45%, 44%); 
+}
